@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Verdana, sans-serif;
+}
+
+.container
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 auto;
+    padding: 15px;
+    max-width: 400px;
+    border: 1px solid violet;
+    border-radius: 16px;
+}
+
+.controls
+{
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+.todo-label
+{
+    display: flex;
+    gap: 8px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.todo-checkbox
+{
+    cursor: pointer;
+}
+
+.todo-checkbox:checked + .todo-text
+{
+    text-decoration: line-through;
+}
+
+.btn-edit, .btn-remove
+{
+    align-items: center;
+    border: 1px solid violet;
+    border-radius: 6px;
+    background-color: transparent;
+}
+
+.disabled
+{
+    display: none;
+}
